@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
-
+  - mowibox
+  
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - pollen-robotics/reachy2_qpik
+  - mowibox/chroma
+  - mowibox/aruco-map-locator
+  - mowibox/Checkers-RL
