@@ -2,10 +2,10 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliation</a>. 
+subtitle: <a href='#'>Engineer</a>. 
 
 profile:
-  align: left
+  align: center
   image: pp.jpg
   image_circular: True # crops the image to make it circular
   more_info: >
