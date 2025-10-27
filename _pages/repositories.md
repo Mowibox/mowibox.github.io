@@ -19,7 +19,6 @@ nav_order: 4
 
 ---
 
-{% endfor %}
 {% endif %}
 {% endif %}
 
