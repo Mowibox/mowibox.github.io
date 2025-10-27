@@ -13,7 +13,7 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
-Coming soon...
+Coming soon!
 
 <div class="publications">
 
