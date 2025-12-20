@@ -26,7 +26,7 @@ announcements:
 
 ## Biography
 
-I received my degree in Electronics & Computer Science with highest honours from [École Nationale Supérieure de l'Électronique et de ses Applications](https://www.ensea.fr/en/) in 2025. In 2024, I was a exchange student in AI & Robotics at [Sapienza University of Rome](https://www.uniroma1.it/en/pagina-strutturale/home), Italy. During my master's internship, I worked on robotics optimization at Pollen Robotics x Hugging Face under the supervision of [Rémi Fabre](https://fr.linkedin.com/in/remifabre) and [Vincent Padois.](https://people.bordeaux.inria.fr/vincent.padois/index.html)
+I received my degree in Electronics & Computer Science with highest honours from [École Nationale Supérieure de l'Électronique et de ses Applications](https://www.ensea.fr/en/) in 2025. In 2024, I was a exchange student in AI & Robotics at [Sapienza University of Rome](https://www.uniroma1.it/en/pagina-strutturale/home), Italy. During my master's internship, I worked on robotics optimization at [Pollen Robotics](https://www.pollen-robotics.com/) x [Hugging Face](https://huggingface.co/) under the supervision of [Rémi Fabre](https://fr.linkedin.com/in/remifabre) and [Vincent Padois.](https://people.bordeaux.inria.fr/vincent.padois/index.html)
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
