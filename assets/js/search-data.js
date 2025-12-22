@@ -59,6 +59,13 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/ousmane-thiongane", "_blank");
         },
       },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0002-9812-5540", "_blank");
+        },
+      },{
         id: 'social-rss',
         title: 'RSS Feed',
         section: 'Socials',
