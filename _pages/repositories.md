@@ -32,7 +32,7 @@ nav_order: 4
 </div>
 {% endif %}
 
-{% if site.data.repositories.robot_repos %}
+{% if site.data.repositories.chromapi_repos %}
 
 ## My Robot
 
