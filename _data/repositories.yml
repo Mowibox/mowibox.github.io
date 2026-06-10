@@ -5,6 +5,10 @@ repo_description_lines_max: 2
 
 github_repos:
   - pollen-robotics/reachy2_qpik
-  - mowibox/chroma
   - mowibox/aruco-map-locator
   - mowibox/Checkers-RL
+  - mowibox/chroma
+
+chromapi_repos:
+  - mowibox/chromapi
+  - mowibox/chromapi_motherboard
