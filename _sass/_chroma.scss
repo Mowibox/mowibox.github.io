@@ -1,0 +1,260 @@
+@font-face {
+  font-display: swap;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/varela-round.woff2") format("woff2");
+}
+
+body,
+.navbar,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Varela Round", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  --c-glass: #bbbbbc;
+  --c-light: #ffffff;
+  --c-dark: #000000;
+  --glass-reflex-light: 0.5;
+  --glass-reflex-dark: 2;
+  --glass-hover-glow: rgba(183, 20, 223, 0.12);
+  --glass-bg-opacity: 8%;
+  --glass-glare-top: rgba(255, 255, 255, 0.3);
+  --glass-glare-bottom: rgba(255, 255, 255, 0.05);
+  --navbar-gradient: linear-gradient(83.21deg, #9414df 0%, #f93eff 100%);
+}
+
+html[data-theme="dark"] {
+  --glass-reflex-light: 0.3;
+  --glass-reflex-dark: 4;
+  --glass-hover-glow: rgba(88, 232, 179, 0.1);
+  --glass-bg-opacity: 3%;
+  --glass-glare-top: rgba(255, 255, 255, 0.08);
+  --glass-glare-bottom: rgba(255, 255, 255, 0.01);
+  --navbar-gradient: linear-gradient(83.21deg, #58e8b3 0%, #3bb8f0 100%);
+}
+
+#navbar {
+  border-bottom: 3px solid;
+  border-image: var(--navbar-gradient) 1;
+}
+
+// Search + theme toggles as round bubbles
+#search-toggle,
+#light-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-left: 0.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 50%;
+  font-size: 1rem;
+  transition:
+    border-color 200ms ease,
+    color 200ms ease;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+  }
+
+  // _themes.scss pads #light-toggle-system, which pushes the icon off-center
+  i {
+    padding: 0 !important;
+    line-height: 1;
+  }
+}
+
+.navbar-nav .toggle-container,
+.navbar-nav li:has(> #search-toggle) {
+  display: flex;
+  align-items: center;
+}
+
+// Glass surface
+.cardbox,
+.profile,
+.publications ol.bibliography > li,
+.projects .card.hoverable {
+  position: relative;
+  border-radius: 0.75rem;
+  background-image: linear-gradient(135deg, var(--glass-glare-top) 0%, transparent 40%, transparent 60%, var(--glass-glare-bottom) 100%);
+  background-color: color-mix(in srgb, var(--c-glass) var(--glass-bg-opacity), transparent);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--c-light) calc(var(--glass-reflex-light) * 10%), transparent),
+    inset 1.8px 3px 0 -2px color-mix(in srgb, var(--c-light) calc(var(--glass-reflex-light) * 90%), transparent),
+    inset -0.3px -1px 4px 0 color-mix(in srgb, var(--c-dark) calc(var(--glass-reflex-dark) * 12%), transparent),
+    0 1px 5px 0 color-mix(in srgb, var(--c-dark) calc(var(--glass-reflex-dark) * 10%), transparent),
+    0 6px 16px 0 color-mix(in srgb, var(--c-dark) calc(var(--glass-reflex-dark) * 8%), transparent);
+}
+
+// Hover lift + glow (not on the profile card)
+.cardbox,
+.publications ol.bibliography > li,
+.projects .card.hoverable {
+  transition: transform 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(to top, var(--glass-hover-glow) 0%, transparent 100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+// Profile card: photo + socials
+// Section headings (e.g. Biography) start below the floated profile card
+.profile ~ .clearfix h2 {
+  clear: both;
+}
+
+// Justified text on the about page (test)
+.profile ~ .clearfix p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.profile {
+  border-top: 3px solid var(--global-theme-color);
+  padding: 1.5rem 1rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  .more-info {
+    font-family: inherit;
+    color: var(--global-text-color-light);
+    margin-top: 0.75rem;
+  }
+
+  .social .contact-icons {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--global-divider-color);
+
+    a {
+      margin: 0 0.3rem;
+    }
+
+    a img,
+    a svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Publications
+.publications ol.bibliography {
+  > li {
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  // bootstrap cols are position:relative; let .pub-year anchor to the card instead
+  li .row > [class*="col"] {
+    position: static;
+  }
+
+  li {
+    .title {
+      font-weight: 700;
+    }
+
+    .pub-year {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.1rem 0.6rem;
+      border: 1px solid var(--global-theme-color);
+      border-radius: 999px;
+      color: var(--global-theme-color);
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .preview img,
+    img.preview {
+      border-radius: 0.5rem;
+    }
+
+    // hidden abstract/bibtex boxes had a dashed bg-colored border, visible on glass
+    div.abstract.hidden,
+    div.bibtex.hidden,
+    div.award.hidden {
+      border: 1px solid transparent;
+      border-radius: 0.5rem;
+    }
+
+    div.abstract.hidden.open,
+    div.bibtex.hidden.open,
+    div.award.hidden.open {
+      border-color: var(--global-divider-color);
+    }
+
+    .links a.btn {
+      --pill: var(--global-theme-color);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin: 0 0.25rem 0.25rem 0;
+
+      &:hover {
+        background: var(--pill);
+        border-color: var(--pill);
+        color: #fff !important;
+      }
+    }
+
+    // filled pills for the main links, like academic-website-template
+    .links a.btn-pdf,
+    .links a.btn-arxiv,
+    .links a.btn-doi,
+    .links a.btn-code {
+      background: var(--pill);
+      border-color: var(--pill);
+      color: #fff !important;
+
+      &:hover {
+        filter: brightness(1.15);
+      }
+    }
+
+    .links a.btn-pdf {
+      --pill: #3a9c8f;
+    }
+    .links a.btn-arxiv {
+      --pill: #b31b1b;
+    }
+    .links a.btn-doi {
+      --pill: #f0a830;
+    }
+    .links a.btn-code {
+      --pill: #24292f;
+    }
+  }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .links a.btn-code {
+  --pill: #6e7681;
+}
