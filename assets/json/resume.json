@@ -6,7 +6,7 @@
     "email": "ousmane.thiongane@outlook.com",
     "phone": "",
     "url": "https://mowibox.github.io/",
-    "summary": "Passionate about Computer Vision and Robotics, I like to handle the different technologies offered by the digital world.",
+    "summary": "Ph.D. student in Robotics.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -24,19 +24,39 @@
   },
   "work": [
     {
-      "name": "Pollen Robotics x Hugging Face, Bordeaux, France",
+      "name": "AeroSpline",
+      "location": "Bruges, France",
+      "position": "R&D Researcher in Robotics",
+      "url": "https://aerospline.eu/",
+      "startDate": "2027-01",
+      "endDate": "2030",
+      "summary": "",
+      "highlights": ["motion planning", "robotics"]
+    },
+    {
+      "name": "Pollen Robotics x Hugging Face",
+      "location": "Bordeaux, France",
       "position": "Robotics R&D Engineer",
       "url": "https://pollen-robotics.com",
       "startDate": "2025-03-23",
-      "endDate": "2025-09-019",
+      "endDate": "2025-09-01",
       "summary": "Master internship - Adaptation of teleoperation instruction for intrinsic and extrinsic Reachy2 robot constraints. State of the art on methods for the constrained formulation of the inverse kinematics problem. Formulation of a general constrained quadratic optimization problem in the context of teleoperation. Software implementation, simulation tests and evaluation on the real robot. Internship co-supervised with the Inria Auctus research team (Vincent Padois).",
       "highlights": ["optimization", "robotics"]
     }
   ],
 
   "education": [
+      {
+      "institution": "Rhoban team from Laboratoire Bordelais de Recherche en Informatique (LaBRI)",
+      "location": "Talence, France",
+      "url": "https://www.rhoban.com/",
+      "area": "Thesis: ",
+      "studyType": "PhD in Robotics",
+      "startDate": "2027-01",
+      "endDate": "2030"
+    },
     {
-      "institution": "École Nationale Supérieure de l'Électronique et de ses Applications",
+      "institution": "École Nationale Supérieure de l'Électronique et de ses Applications (ENSEA)",
       "location": "Cergy, France",
       "url": "https://www.ensea.fr/en/",
       "area": "Electronics and Computer Science",

@@ -2,13 +2,14 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>AI & Robotics Engineer</a>. 
+subtitle: <a href='https://www.labri.fr/'>Laboratoire Bordelais de Recherche en Informatique (LaBRI)</a> <a href='https://x.com'>x</a> <a href='https://www.aerospline.eu/'>AeroSpline, France</a>
 
 profile:
   align: left
   image: pp.jpg
   image_circular: True # crops the image to make it circular
   more_info: >
+    <p><i>PhD student in Robotics</i></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -23,10 +24,20 @@ announcements:
 #   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
 #   limit: 3 # leave blank to include all the blog posts
 ---
+My research focuses on robotics, particularly motion planning and optimization for robot manipulators, with the aim of making robot motion precise, efficient and interpretable, so that robots can work alongside humans and assist them in their daily work in a practical and useful way.
+
+During my free time, I enjoy drawing, and building things and share my creations. I'm also a member of the [CDROMS](https://cdroms.fr) robotics team, participating at the [French Robotics Cup](https://www.coupederobotique.fr/).
+
+<figure class="text-center" style="display: table; margin: 0 auto;">
+  <img src="{{ '/assets/img/UR5-Robotic-Arm-Picking-Apples.gif' | relative_url }}" alt="UR5 robotic arm picking apples" class="img-fluid rounded" style="max-height: 200px;">
+  <figcaption class="caption"><i>UR5 robotic arm picking apples. Source: <a href="https://www.roboticgizmos.com/ur5-robotic-arm-picking-apples/">Robotic Gizmos</a></i></figcaption>
+</figure>
 
 ## Biography
 
 I received my degree in Electronics & Computer Science with highest honours from [École Nationale Supérieure de l'Électronique et de ses Applications](https://www.ensea.fr/en/) in 2025. In 2024, I was an exchange student in AI & Robotics at [Sapienza University of Rome](https://www.uniroma1.it/en/pagina-strutturale/home), Italy. During my master's internship, I worked on robotics optimization at [Pollen Robotics](https://www.pollen-robotics.com/) x [Hugging Face](https://huggingface.co/) under the supervision of [Rémi Fabre](https://fr.linkedin.com/in/remifabre) and [Vincent Padois.](https://people.bordeaux.inria.fr/vincent.padois/index.html)
+
+Since 2027, I have been a Ph.D. student with the [Rhoban team](https://www.rhoban.com/) at [LaBRI](https://www.labri.fr/) and the company [AeroSpline](https://www.aerospline.eu/), supervised by [Grégoire Passault](https://gregwar.com).
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

@@ -40,9 +40,18 @@ html[data-theme="dark"] {
   --navbar-gradient: linear-gradient(83.21deg, #58e8b3 0%, #3bb8f0 100%);
 }
 
-#navbar {
-  border-bottom: 3px solid;
-  border-image: var(--navbar-gradient) 1;
+// Scroll progress bar: gradient line under the navbar.
+// background-size: 100vw keeps the gradient fixed to the viewport, so scrolling reveals it.
+progress {
+  height: 3px;
+}
+progress::-webkit-progress-value {
+  background: var(--navbar-gradient);
+  background-size: 100vw 100%;
+}
+progress::-moz-progress-bar {
+  background: var(--navbar-gradient);
+  background-size: 100vw 100%;
 }
 
 // Search + theme toggles as round bubbles
