@@ -1,0 +1,11 @@
+<div class="ur5" data-ur5 role="img" aria-label="Interactive 3D model of a UR5 robotic arm"></div>
+<style>
+  /* flow-root: stays beside the floated profile instead of running under it. */
+  .ur5 { position: relative; display: flow-root; height: 340px; margin: -1rem auto; pointer-events: none; }
+  .ur5 canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+</style>
+<script type="importmap">
+  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/" } }
+</script>
+<link rel="preload" as="fetch" crossorigin href="{{ '/assets/models/ur5.glb' | relative_url }}">
+<script type="module" src="{{ '/assets/js/ur5.js' | relative_url | bust_file_cache }}"></script>

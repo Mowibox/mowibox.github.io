@@ -26,12 +26,9 @@ announcements:
 ---
 My research focuses on robotics, particularly motion planning and optimization for robot manipulators, with the aim of making robot motion precise, efficient and interpretable, so that robots can work alongside humans and assist them in their daily work in a practical and useful way.
 
-During my free time, I enjoy drawing, and building things and share my creations. I'm also a member of the [CDROMS](https://cdroms.fr) robotics team, participating at the [French Robotics Cup](https://www.coupederobotique.fr/).
+{% include ur5.liquid %}
 
-<figure class="text-center" style="display: table; margin: 0 auto;">
-  <img src="{{ '/assets/img/UR5-Robotic-Arm-Picking-Apples.gif' | relative_url }}" alt="UR5 robotic arm picking apples" class="img-fluid rounded" style="max-height: 200px;">
-  <figcaption class="caption"><i>UR5 robotic arm picking apples. Source: <a href="https://www.roboticgizmos.com/ur5-robotic-arm-picking-apples/">Robotic Gizmos</a></i></figcaption>
-</figure>
+During my free time, I enjoy drawing, and building things and share my creations. I'm also a member of the [CDROMS](https://cdroms.fr) robotics team, participating at the [French Robotics Cup](https://www.coupederobotique.fr/).
 
 ## Biography
 
