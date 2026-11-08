@@ -28,7 +28,7 @@ My research focuses on robotics, particularly motion planning and optimization f
 
 {% include ur5.liquid %}
 
-During my free time, I enjoy drawing, and building things and share my creations. I'm also a member of the [CDROMS](https://cdroms.fr) robotics team, participating at the [French Robotics Cup](https://www.coupederobotique.fr/).
+During my free time, I enjoy drawing, building things and share my creations. I'm also a member of the [CDROMS](https://cdroms.fr) robotics team, participating at the [French Robotics Cup](https://www.coupederobotique.fr/).
 
 ## Biography
 
